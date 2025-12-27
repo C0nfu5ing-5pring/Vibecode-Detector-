@@ -136,7 +136,6 @@ const Game = ({ onFinish }) => {
 
               const score = calculateScore(answers, gameReports);
               onFinish(score, answers, gameReports);
-              console.log(score);
             }}
             className={`block mx-auto mt-4 px-8 py-3 rounded-2xl border-4
     text-xl tracking-wide transition-all

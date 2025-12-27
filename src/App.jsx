@@ -1,3 +1,4 @@
+import reports from "./data/reports";
 import Disclaimer from "./pages/Disclaimer";
 import Game from "./pages/Game";
 import Home from "./pages/Home";
@@ -10,6 +11,8 @@ const App = () => {
   const [step, setStep] = useState("disclaimer");
   const [userName, setUserName] = useState("");
   const [score, setScore] = useState(0);
+  const [finalAnswers, setFinalAnswers] = useState([]);
+  const [finalReports, setFinalReports] = useState([]);
 
   return (
     <>
@@ -37,8 +40,10 @@ const App = () => {
 
       {step === "game" && (
         <Game
-          onFinish={(finalScore) => {
-            setScore(finalScore);
+          onFinish={(score, answers, reports) => {
+            setScore(score);
+            setFinalAnswers(answers);
+            setFinalReports(reports);
             setStep("result");
           }}
         />
@@ -46,10 +51,10 @@ const App = () => {
 
       {step === "result" && (
         <Result
-          onNext={() => {
-            setStep("why");
-          }}
           score={score}
+          answers={finalAnswers}
+          reports={finalReports}
+          onNext={() => setStep("why")}
         />
       )}
 
