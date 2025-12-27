@@ -39,7 +39,11 @@ const Game = ({ onFinish }) => {
         score = score + 1;
       }
     }
+
+    return score;
   };
+
+  const allAnswered = answers.every((answer) => answer != null);
 
   return (
     <div className="h-screen bg-[#FFF3E0] flex items-center justify-center px-6">
@@ -101,10 +105,10 @@ const Game = ({ onFinish }) => {
         <div className="mt-6">
           <div className="flex justify-center gap-4">
             <button
-              onClick={() => handleAnswer("VIBE")}
+              onClick={() => handleAnswer("vibecoded")}
               className={`px-6 py-3 rounded-xl border-4 text-xl active:scale-95
                 ${
-                  answers[currentIndex] === "VIBE"
+                  answers[currentIndex] === "vibecoded"
                     ? "bg-[#E74C3C] text-white border-black"
                     : "bg-[#FFF3E0] border-[#FFB703]"
                 }`}
@@ -113,10 +117,10 @@ const Game = ({ onFinish }) => {
             </button>
 
             <button
-              onClick={() => handleAnswer("VALID")}
+              onClick={() => handleAnswer("valid")}
               className={`px-6 py-3 rounded-xl border-4 text-xl active:scale-95
                 ${
-                  answers[currentIndex] === "VALID"
+                  answers[currentIndex] === "valid"
                     ? "bg-[#2ECC71] text-white border-black"
                     : "bg-[#FFF3E0] border-[#FFB703]"
                 }`}
@@ -126,13 +130,21 @@ const Game = ({ onFinish }) => {
           </div>
 
           <button
+            disabled={!allAnswered}
             onClick={() => {
+              if (!allAnswered) return;
+
               const score = calculateScore(answers, gameReports);
               onFinish(score, answers, gameReports);
+              console.log(score);
             }}
-            className="block mx-auto mt-4 bg-[#FF6F00] text-white 
-                       px-8 py-3 rounded-2xl border-4 border-[#FFB703] 
-                       text-xl tracking-wide active:scale-95 cursor-pointer transition-all hover:rotate-2"
+            className={`block mx-auto mt-4 px-8 py-3 rounded-2xl border-4
+    text-xl tracking-wide transition-all
+    ${
+      allAnswered
+        ? "bg-[#FF6F00] text-white border-[#FFB703] active:scale-95 cursor-pointer hover:rotate-2"
+        : "bg-gray-300 text-gray-500 border-gray-400 cursor-not-allowed"
+    }`}
           >
             SUBMIT
           </button>
