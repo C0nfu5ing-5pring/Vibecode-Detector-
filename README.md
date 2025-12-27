@@ -4,13 +4,21 @@ This is s humorous game that I have made. It is not a full-fledged game, it is a
 
 ## Idea behind Vibecode Detector™
 
-I need you to tell you a story about it. Once upon a time... there was a boy (me) who was participating in a 50 hour coding competition. He had 22.3 hours of code still left to do. He put all the work on that 1 project and completed 22.7 hours of coding session. BUT then enters the plot twist. When the boy was happy and dreaming about completing the challenge, SUDDENLY the reviewer considers his project vibecoded and then considers only 17 hours of code.
+This website started with a review from Jane. A project I worked
+on was considered vibecoded, and only 17 hours out of 22.7 hours
+of the time I spent on it counted. Jane, I did not know that
+commits are also considered. Usually I work locally and at last I
+commit everything at once and deploy it. I really appreciate and
+respect your review I just made this because I needed to complete
+some amount of coding hours. Again, this is not a website to
+target Jane. Make sure to write "XD" in review of this project so
+that I understand you enjoyed it!
 
 TBH, this is just a humorus game, regarding my situation (No worries Jane, I respect your decision) and I built to complete my 6 hours of code.
 
 ## Disclaimer
 
-This is just for fun. I am not targetting any single person. If someone feels hurt, I genuienly am sorry! I didn't mean to hurt anybody. Also, Jane if you loved this website just include "HAHAHAHA" in the review so that I understand that I did not hurt your feelings and you enjoyed the website-game, game-website aghhh whatever this is called!
+This is just for fun. I am not targetting any single person. If someone feels hurt, I genuienly am sorry! I didn't mean to hurt anybody. Also, Jane if you loved this website just include "XD" in the review so that I understand that I did not hurt your feelings and you enjoyed the website-game, game-website aghhh whatever this is called!
 
 ## How it works
 
