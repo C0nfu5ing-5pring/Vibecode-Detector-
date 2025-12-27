@@ -42,7 +42,7 @@ const Disclaimer = ({ onContinue }) => {
 
         <button
           onClick={onContinue}
-          className="px-6 py-3 border-3 mt-6 border-black border-solid text-[#FFD600] text-lg sm:text-xl rounded-2xl rotate-1 cursor-pointer active:scale-95 uppercase bg-[#FF3D57] select-none"
+          className="px-6 hover:rotate-2 transition-all py-3 border-3 mt-6 border-black border-solid text-[#FFD600] text-lg sm:text-xl rounded-2xl rotate-1 cursor-pointer active:scale-95 uppercase bg-[#FF3D57] select-none"
         >
           I understand
         </button>

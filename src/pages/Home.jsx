@@ -20,7 +20,7 @@ const Home = ({ onPlay, userName }) => {
              bottom-16 sm:bottom-12 md:bottom-16 lg:bottom-18
              bg-[#ffd502] text-lg sm:text-xl md:text-2xl lg:text-3xl
              px-6 py-3 border-3 rounded-2xl -rotate-1
-             hover:bg-[#fbda36] transition-all
+             hover:bg-[#fbda36] hover:rotate-2 transition-all
              cursor-pointer active:scale-95"
               onClick={onPlay}
             >

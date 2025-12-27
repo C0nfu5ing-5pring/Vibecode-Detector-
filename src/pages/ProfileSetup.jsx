@@ -28,7 +28,7 @@ const ProfileSetup = ({ onSave }) => {
         <button
           onClick={handleSave}
           disabled={!name.trim()}
-          className={`px-6 py-3 border-3 border-black border-solid text-[#FFD600] text-lg sm:text-xl rounded-2xl rotate-1 cursor-pointer uppercase bg-[#FF3D57] select-none
+          className={`px-6 py-3 hover:rotate-2 transition-all border-3 border-black border-solid text-[#FFD600] text-lg sm:text-xl rounded-2xl rotate-1 cursor-pointer uppercase bg-[#FF3D57] select-none
             ${
               !name.trim() ? "opacity-50 cursor-not-allowed" : "active:scale-95"
             }

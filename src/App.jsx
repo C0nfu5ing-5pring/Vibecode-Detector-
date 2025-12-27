@@ -1,4 +1,3 @@
-import reports from "./data/reports";
 import Disclaimer from "./pages/Disclaimer";
 import Game from "./pages/Game";
 import Home from "./pages/Home";
