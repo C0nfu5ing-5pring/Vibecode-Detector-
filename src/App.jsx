@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import ProfileSetup from "./pages/ProfileSetup";
 import Result from "./pages/Result";
 import Why from "./pages/Why";
+import { Analytics } from "@vercel/analytics/react";
 import { useState } from "react";
 
 const App = () => {
@@ -58,6 +59,7 @@ const App = () => {
       )}
 
       {step === "why" && <Why onRestart={() => setStep("home")} />}
+      <Analytics />
     </>
   );
 };
