@@ -14,13 +14,15 @@ This is just for fun. I am not targetting any single person. If someone feels hu
 
 ## How it works
 
-- First the user gets a starting screen with a DISCLAIMER
-- User is prompted to enter their name
-- Once the user clicks on play button a report card come their way with some information
-- Now the user has to decide whether it is vibecoded or not
-- This will continue for 5 times and everytime the user will get a new report
-- After 5 reports, the user will be redirected to another page featuring my message to Jane!
-- End, user will again be directed to the disclaimer
+- First the user gets a starting screen with a DISCLAIMER.
+- User is prompted with their job application like card where they need to enter their name.
+- Once the user clicks on save, they get redirected to the home page and click on the play button.
+- The user will be given 5 reports (1 at a time) and below the report, two buttons VIBECODED and VALID will be present.
+- User needs to decide whether the code is VIBCODED or VALID.
+- User can navigate between cards to change their opinion before submitting.
+- After clicking on submit, user's score will be visible out of 5.
+- After viewing the user's score, the user will be redirected to why this game-website website-game (whatever it is!) was made.
+- After that, user can restart the game all over again with different report card.
 
 ## Tech Stack
 
